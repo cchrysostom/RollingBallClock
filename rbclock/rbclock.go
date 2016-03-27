@@ -1,4 +1,5 @@
-package main
+// rbclock
+package rbclock
 
 import (
     "fmt"
@@ -262,12 +263,3 @@ func ClockStateAfterMinutes(totalBallCount int, minutes int) []byte {
     } 
     return b
 }
-
-func main() {
-    fmt.Println("Rolling ball clock simulator.")
-    BallOrderRepeat(27)
-    BallOrderRepeat(45)
-    BallOrderRepeat(127)
-    DisplayClockAfterMinutes(30, 325)
-}
-
